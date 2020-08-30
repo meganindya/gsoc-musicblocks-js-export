@@ -232,9 +232,9 @@ supports **four styles** (themes): *dark high-contrast* (`dracula`), *light low-
 
 ![JavaScript Editor Styles](./assets/js-editor-styles.png)
 
-For an example [project](./assets/traverse-mode-up-down.html),
+For an example [project](./examples/traverse-mode-up-down/traverse-mode-up-down.html),
 
-![Traverse mode](./assets/traverse-mode-up-down.png)
+![Traverse mode](./examples/traverse-mode-up-down/blocks.png)
 
 the *code* generated is
 
@@ -276,8 +276,8 @@ MusicBlocks.run();
 ```
 
 which when *run* (by clicking on the `▶` button on the editor), plays
-[audio](./assets/traverse-mode-up-down.oga) and draws
-![artwork](./assets/traverse-mode-up-down-art.png)
+[audio](./examples/traverse-mode-up-down/mouse-audio.oga) and draws
+![artwork](./examples/traverse-mode-up-down/mouse-art.png)
 
 ## Possible Enhancements
 
