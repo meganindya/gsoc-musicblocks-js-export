@@ -82,8 +82,8 @@ the said components.
 
 - **`turtle.js`**
 
-  | PR(s) | Description |
-  | :---: | ----------- |
+  | PR | Description |
+  | :-: | ----------- |
   | [2304](https://github.com/sugarlabs/musicblocks/pull/2304) | Reorganized and renamed members, and cleaned up code. |
   | [2312](https://github.com/sugarlabs/musicblocks/pull/2312) | Set up the **Model-View-Controller (MVC)** framework for the `Turtle` component. |
   | [2316](https://github.com/sugarlabs/musicblocks/pull/2312) | Reworked variable access. |
@@ -98,14 +98,14 @@ the said components.
 
 - **`turtle-painter.js`**
 
-  | PR(s) | Description |
-  | :---: | ----------- |
+  | PR | Description |
+  | :-: | ----------- |
   | [2382](https://github.com/sugarlabs/musicblocks/pull/2382) | Created `Turtle`'s subcomponent `Painter` in `turtle-painter.js`. |
 
 - **`turtle-singer.js`**
 
-  | PR(s) | Description |
-  | :---: | ----------- |
+  | PR | Description |
+  | :-: | ----------- |
   | [2397](https://github.com/sugarlabs/musicblocks/pull/2397) | Rebranded `note.js` to `turtle-singer.js`, and `NoteController` component `class` to `Singer`. |
 
 ### Building the JavaScript coding Framework
@@ -140,42 +140,20 @@ methods in `js/turtleactions/`.
 
 Below listed are the major contributions related to the said work.
 
-  - Conceptualized the "framework" and tested for *Graphics* and *Pen* palette
-  blocks.
-  ([PR 2380](https://github.com/sugarlabs/musicblocks/pull/2380))
-
-  - Ported code related to behavior of *Rhythm* blocks.
-  ([PR 2497](https://github.com/sugarlabs/musicblocks/pull/2497))
-
-  - Ported code related to behavior of *Meter* blocks.
-  ([PR 2536](https://github.com/sugarlabs/musicblocks/pull/2536))
-
-  - Ported code related to behavior of *Pitch* blocks.
-  ([PR 2454](https://github.com/sugarlabs/musicblocks/pull/2454))
-
-  - Ported code related to behavior of *Intervals* blocks.
-  ([PR 2504](https://github.com/sugarlabs/musicblocks/pull/2504))
-
-  - Ported code related to behavior of *Tone* blocks.
-  ([PR 2480](https://github.com/sugarlabs/musicblocks/pull/2480))
-
-  - Ported code related to behavior of *Ornament* blocks.
-  ([PR 2471](https://github.com/sugarlabs/musicblocks/pull/2471))
-
-  - Ported code related to behavior of *Volume* blocks.
-  ([PR 2476](https://github.com/sugarlabs/musicblocks/pull/2474))
-
-  - Ported code related to behavior of *Drum* blocks.
-  ([PR 2477](https://github.com/sugarlabs/musicblocks/pull/2477))
-
-  - Created the API files.
-  ([PR 2508](https://github.com/sugarlabs/musicblocks/pull/2508))
-
-  - Set up the timing of events.
-  ([PR 2511](https://github.com/sugarlabs/musicblocks/pull/2511))
-
-  - Add argument validation.
-  ([PR 2547](https://github.com/sugarlabs/musicblocks/pull/2547))
+| PR | Description |
+| :-: | ----------- |
+| [2380](https://github.com/sugarlabs/musicblocks/pull/2380) | Conceptualized the "framework" and testedfor *Graphics* and *Pen* palette blocks. |
+| [2497](https://github.com/sugarlabs/musicblocks/pull/2497) | Ported code related to behavior of*Rhythm* blocks. |
+| [2536](https://github.com/sugarlabs/musicblocks/pull/2536) | Ported code related to behavior of *Meter*blocks. |
+| [2454](https://github.com/sugarlabs/musicblocks/pull/2454) | Ported code related to behavior of *Pitch*blocks. |
+| [2504](https://github.com/sugarlabs/musicblocks/pull/2504) | Ported code related to behavior of*Intervals* blocks. |
+| [2480](https://github.com/sugarlabs/musicblocks/pull/2480) | Ported code related to behavior of *Tone*blocks. |
+| [2471](https://github.com/sugarlabs/musicblocks/pull/2471) | Ported code related to behavior of*Ornament* blocks. |
+| [2476](https://github.com/sugarlabs/musicblocks/pull/2474) | Ported code related to behavior of*Volume* blocks. |
+| [2477](https://github.com/sugarlabs/musicblocks/pull/2477) | Ported code related to behavior of *Drum*blocks. |
+| [2508](https://github.com/sugarlabs/musicblocks/pull/2508) | Created the API files. |
+| [2511](https://github.com/sugarlabs/musicblocks/pull/2511) | Set up the timing of events. |
+| [2547](https://github.com/sugarlabs/musicblocks/pull/2547) | Add argument validation. |
 
 ### Generating code from block stacks
 
@@ -204,9 +182,9 @@ the utilities related to the API's *argument validation*.
 
 Below listed is the Pull Request related to the code generation.
 
-  - Added the mechanism to generate the tree-like data-structure, AST from it,
-  and the final code.
-  ([PR 2525](https://github.com/sugarlabs/musicblocks/pull/2525))
+| PR | Description |
+| :-: | ----------- |
+| [2525](https://github.com/sugarlabs/musicblocks/pull/2525) | Added the mechanism to generate the tree-like data-structure, AST from it, and the final code. |
 
 ### Building the JavaScript Code Editor
 
@@ -218,12 +196,8 @@ the JavaScript-based Music Blocks programs.
 
 Below listed are the contributions related to the JavaScript Editor Widget.
 
-  - Built the initial widget design.
-  ([PR 2489](https://github.com/sugarlabs/musicblocks/pull/2489))
-
-  - Add robustness features and failsafes mechanisms related to multiple *Mice*
-  (*Mouse* objects).
-  ([PR 2514](https://github.com/sugarlabs/musicblocks/pull/2514))
-
-  - Enhance the editor.
-  ([PR 2547](https://github.com/sugarlabs/musicblocks/pull/2547))
+| PR | Description |
+| :-: | ----------- |
+| [2489](https://github.com/sugarlabs/musicblocks/pull/2489) | Built the initial widget design. |
+| [2514](https://github.com/sugarlabs/musicblocks/pull/2514) | Add robustness features and failsafes mechanisms related to multiple *Mice* (*Mouse* objects). |
+| [2547](https://github.com/sugarlabs/musicblocks/pull/2547) | Enhance the editor. |
