@@ -1,8 +1,12 @@
 # Music Blocks JavaScript Export
 
-This is a description of my work on [Music Blocks JavaScript Export](https://summerofcode.withgoogle.com/projects/#5876019535282176) during *Google Summer of Code 2020* with
+This is a description of my work on
+[Music Blocks JavaScript Export](https://summerofcode.withgoogle.com/projects/#5876019535282176)
+during *Google Summer of Code 2020* with
 [Sugar Labs](https://github.com/sugarlabs/). This repository contains my
-original authored files, samples of my work, and examples.
+[original authored files](./original-authored-files/), samples of my work, and
+examples. The exported code syntax guide and API is present in
+[original-authored-files/js-export/samples/sample.js](./original-authored-files/js-export/samples/sample.js).
 </br>
 
 ## Abstract
@@ -56,6 +60,8 @@ My work, basically, consisted of four major parts:
 *Generating code from block stacks*, and *Building the JavaScript Code Editor*.
 Since, the restructuring was not possible to do linearly, I did it in multiple
 turns.
+
+</br>
 
 ### Restructuring the components
 
@@ -112,6 +118,8 @@ the said components.
   | :-: | ----------- |
   | [2397](https://github.com/sugarlabs/musicblocks/pull/2397) | Rebranded `note.js` to `turtle-singer.js`, and `NoteController` component `class` to `Singer`. |
 
+</br>
+
 ### Building the JavaScript coding Framework
 
 I created a framework to setup the JavaScript code-based Music Blocks programs.
@@ -159,6 +167,8 @@ Below listed are the major contributions related to the said work.
 | [2511](https://github.com/sugarlabs/musicblocks/pull/2511) | Set up the timing of events. |
 | [2547](https://github.com/sugarlabs/musicblocks/pull/2547) | Add argument validation. |
 
+</br>
+
 ### Generating code from block stacks
 
 I used a library called **`Astring`** to generate required "exported" JavaScript
@@ -190,6 +200,8 @@ Below listed is the Pull Request related to the code generation.
 | :-: | ----------- |
 | [2525](https://github.com/sugarlabs/musicblocks/pull/2525) | Added the mechanism to generate the tree-like data-structure, AST from it, and the final code. |
 
+</br>
+
 ### Building the JavaScript Code Editor
 
 I created a new widget named **JavaScript Editor** which has a *syntax-highlighted*
@@ -213,6 +225,14 @@ Below listed are the contributions related to the JavaScript Editor Widget.
 The JavaScript Widget looks like:
 
 ![JavaScript Editor Widget](./assets/js-editor.png)
+
+The `?` button displays the help and guide about the syntax, the `↻` button
+regenerates (for changes made in block stacks) the code, and the `▶` button
+executes (runs) the code. The button `💧` button changes the style. The editor
+supports four styles (themes): dark high-contrast (dracula), light low-contrast
+(github), dark high-contrast (railcasts), light high-contrast (visual studio).
+
+![JavaScript Editor Styles](./assets/js-editor-styles.png)
 
 For an example [project](./assets/traverse-mode-up-down.html),
 
@@ -259,5 +279,29 @@ MusicBlocks.run();
 
 which when run (by clicking on the `▶` button on the editor), plays
 [audio](./assets/traverse-mode-up-down.oga) and draws
-![artwork](./assets/traverse-mode-up-down-art.png).
+![artwork](./assets/traverse-mode-up-down-art.png)
 
+## Possible Enhancements
+
+- Add *load*/*save* mechanism in the JavaScript Editor.
+
+- Add support for *Heap* (create a `stack` data-structure), *Media*, *Sensors*,
+and *Ensemble* blocks.
+
+- Implement a mechanism to stop the running code.
+
+- `ADVANCED` &nbsp; Preprocess the generated/written code to add `async`/
+`await`, `return ENDFLOW`, `return ENDMOUSE`, so that the code can be even
+cleaner.
+
+- `ADVANCED` &nbsp; Preprocess the generated/written code to surround the
+`await` statements in `try catch` blocks, so that `uncaught in promise` errors
+can be handled.
+
+- `ADVANCED` &nbsp; Redirect console behavior in the JavaScript Widget's
+console.
+
+- `ADVANCED` &nbsp; Separate the music generation components of the Music Blocks
+codebase such that the "code" based programs can be written and executed locally
+from one single HTML (or some executable) file, i.e. there would only be the
+canvas and the editor in that GUI.
