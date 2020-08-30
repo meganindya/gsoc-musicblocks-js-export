@@ -69,75 +69,44 @@ the said components.
 
 - **`logo.js`**
 
-  - Ported out code related to processing *notes* to `js/note.js`, encapsulating
-  those in a new `class` named `NoteController`.
-  ([PR 2295](https://github.com/sugarlabs/musicblocks/pull/2295))
-
-  - Converted the `function prototype` definition of `Logo` to *ES6* `class` and
-  added *ES6* `getters` and `setters` for instance variables.
-  ([PR 2298](https://github.com/sugarlabs/musicblocks/pull/2298))
-
-  - Ported out code related to *notations* to `js/notation.js`, encapsulating
-  those in a new `class` named `Notation`.
-  ([PR 2356](https://github.com/sugarlabs/musicblocks/pull/2356))
-
-  - Ported out utilities related to mathematical calculations to
-  `js/utils/mathutils.js`, encapsulating those in a new `class` named
-  `MathUtility`.
-  ([PR 2357](https://github.com/sugarlabs/musicblocks/pull/2357))
-
-  - Ported out some functions related to *blocks* to `js/blocks.js`.
-  ([PR 2358](https://github.com/sugarlabs/musicblocks/pull/2358))
-
-  - Reorganized and renamed members, and cleaned up code.
-  ([PR 2393](https://github.com/sugarlabs/musicblocks/pull/2393))
-
-  - Ported out utility functions related to music logic to `Singer` (`note.js`
-  was rebranded as `turtle-singer.js`, and `NoteController` as `Singer`) in
-  `turtle-singer.js`
-  ([PR 2407](https://github.com/sugarlabs/musicblocks/pull/2407))
-
-  - Ported out variables related to music *state* to `Turtle`/`Singer`.
-  ([PR 2408](https://github.com/sugarlabs/musicblocks/pull/2408),
-  [PR 2418](https://github.com/sugarlabs/musicblocks/pull/2408),
-  [PR 2425](https://github.com/sugarlabs/musicblocks/pull/2425),
-  [PR 2432](https://github.com/sugarlabs/musicblocks/pull/2432),)
+  | PR(s) | Description |
+  | :---: | ----------- |
+  | [2295](https://github.com/sugarlabs/musicblocks/pull/2295) | Ported out code related to processing *notes* to `js/note.js`, encapsulating those in a new `class` named `NoteController`. |
+  | [2298](https://github.com/sugarlabs/musicblocks/pull/2298) | Converted the `function prototype` definition of `Logo` to *ES6* `class` and added *ES6* `getters` and `setters` for instance variables. |
+  | [2356](https://github.com/sugarlabs/musicblocks/pull/2356) | Ported out code related to *notations* to `js/notation.js`, encapsulating those in a new `class` named `Notation`. |
+  | [2357](https://github.com/sugarlabs/musicblocks/pull/2357) | Ported out utilities related to mathematical calculations to `js/utils/mathutils.js`, encapsulating those in a new `class` named `MathUtility`. |
+  | [2358](https://github.com/sugarlabs/musicblocks/pull/2358) | Ported out some functions related to *blocks* to `js/blocks.js`. |
+  | [2393](https://github.com/sugarlabs/musicblocks/pull/2393) | Reorganized and renamed members, and cleaned up code. |
+  | [2407](https://github.com/sugarlabs/musicblocks/pull/2407) | Ported out utility functions related to music logic to `Singer` (`note.js` was rebranded as `turtle-singer.js`, and `NoteController` as `Singer`) in `turtle-singer.js` |
+  | [2408](https://github.com/sugarlabs/musicblocks/pull/2408), [2418](https://github.com/sugarlabs/musicblocks/pull/2408), [2425](https://github.com/sugarlabs/musicblocks/pull/2425), [2432](https://github.com/sugarlabs/musicblocks/pull/2432) | Ported out variables related to music *state* to `Turtle`/`Singer`. |
 
 - **`turtle.js`**
 
-  - Reorganized and renamed members, and cleaned up code.
-  ([PR 2304](https://github.com/sugarlabs/musicblocks/pull/2304))
-
-  - Set up the **Model-View-Controller (MVC)** framework for the `Turtle`
-  component.
-  ([PR 2312](https://github.com/sugarlabs/musicblocks/pull/2312))
-
-  - Reworked variable access.
-  ([PR 2316](https://github.com/sugarlabs/musicblocks/pull/2312))
+  | PR(s) | Description |
+  | :---: | ----------- |
+  | [2304](https://github.com/sugarlabs/musicblocks/pull/2304) | Reorganized and renamed members, and cleaned up code. |
+  | [2312](https://github.com/sugarlabs/musicblocks/pull/2312) | Set up the **Model-View-Controller (MVC)** framework for the `Turtle` component. |
+  | [2316](https://github.com/sugarlabs/musicblocks/pull/2312) | Reworked variable access. |
 
 - **`turtles.js`**
 
-  - Separated the `Turtles` component from `turtle.js` to `turtles.js` and set
-  up the **Model-View-Controller (MVC)** framework for it.
-  ([PR 2309](https://github.com/sugarlabs/musicblocks/pull/2309))
-
-  - Removed deprecated code and reworked variable access.
-  ([PR 2313](https://github.com/sugarlabs/musicblocks/pull/2313),
-  [PR 2341](https://github.com/sugarlabs/musicblocks/pull/2341))
-
-  - Improved modularity.
-  ([PR 2384](https://github.com/sugarlabs/musicblocks/pull/2374))
+  | PR(s) | Description |
+  | :---: | ----------- |
+  | [2309](https://github.com/sugarlabs/musicblocks/pull/2309) | Separated the `Turtles` component from `turtle.js` to `turtles.js` and set up the **Model-View-Controller (MVC)** framework for it. |
+  | [2313](https://github.com/sugarlabs/musicblocks/pull/2313), [2341](https://github.com/sugarlabs/musicblocks/pull/2341) | Removed deprecated code and reworked variable access. |
+  | [2384](https://github.com/sugarlabs/musicblocks/pull/2374) | Improved modularity. |
 
 - **`turtle-painter.js`**
 
-  - Created `Turtle`'s subcomponent `Painter` in `turtle-painter.js`.
-  ([PR 2382](https://github.com/sugarlabs/musicblocks/pull/2382))
+  | PR(s) | Description |
+  | :---: | ----------- |
+  | [2382](https://github.com/sugarlabs/musicblocks/pull/2382) | Created `Turtle`'s subcomponent `Painter` in `turtle-painter.js`. |
 
 - **`turtle-singer.js`**
 
-  - Rebranded `note.js` to `turtle-singer.js`, and `NoteController` component
-  `class` to `Singer`.
-  ([PR 2397](https://github.com/sugarlabs/musicblocks/pull/2397))
+  | PR(s) | Description |
+  | :---: | ----------- |
+  | [2397](https://github.com/sugarlabs/musicblocks/pull/2397) | Rebranded `note.js` to `turtle-singer.js`, and `NoteController` component `class` to `Singer`. |
 
 ### Building the JavaScript coding Framework
 
