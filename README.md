@@ -3,6 +3,7 @@
 This is a description of my work on [Music Blocks JavaScript Export](https://summerofcode.withgoogle.com/projects/#5876019535282176) during *Google Summer of Code 2020* with
 [Sugar Labs](https://github.com/sugarlabs/). This repository contains my
 original authored files, samples of my work, and examples.
+</br>
 
 ## Abstract
 
@@ -11,6 +12,7 @@ snap-together block-based instructions to create music. The purpose of my
 project is to develop a framework to export any Music Blocks program to an
 equivalent JavaScript code, and/or write Music Blocks programs using JavaScript,
 either of which can run independently of the blocks.
+</br>
 
 ## Tech Stack
 
@@ -32,6 +34,8 @@ Finally, I relied on a library named **[CodeJar](https://github.com/antonmedv/co
 it to create a text editor inside my widget, and a styling library named
 **[Highlight.js](https://github.com/highlightjs/highlight.js/)**
 (*BSD-3-Clause License*) for syntax highlighting.
+
+</br>
 
 ## Work Progression
 
@@ -201,3 +205,59 @@ Below listed are the contributions related to the JavaScript Editor Widget.
 | [2489](https://github.com/sugarlabs/musicblocks/pull/2489) | Built the initial widget design. |
 | [2514](https://github.com/sugarlabs/musicblocks/pull/2514) | Add robustness features and failsafes mechanisms related to multiple *Mice* (*Mouse* objects). |
 | [2547](https://github.com/sugarlabs/musicblocks/pull/2547) | Enhance the editor. |
+
+</br>
+
+## Demo
+
+The JavaScript Widget looks like:
+
+![JavaScript Editor Widget](./assets/js-editor.png)
+
+For an example [project](./assets/traverse-mode-up-down.html),
+
+![Traverse mode](./assets/traverse-mode-up-down.png)
+
+the code generated is
+
+```
+let action = async mouse => {
+    await mouse.playNote(1 / 4, async () => {
+        await mouse.playPitch("do", 5);
+        await mouse.print(mouse.NOTEVALUE);
+        return mouse.ENDFLOW;
+    });
+    let box1 = 0;
+    let box2 = 360 / mouse.MODELENGTH;
+    for (let i0 = 0; i0 < mouse.MODELENGTH * 2; i0++) {
+        await mouse.playNote(1 / 4, async () => {
+            if (box1 < mouse.MODELENGTH) {
+                await mouse.stepPitch(1);
+                await mouse.turnRight(box2);
+            } else {
+                await mouse.stepPitch(-1);
+                await mouse.turnLeft(box2);
+            }
+            await mouse.goForward(100);
+            return mouse.ENDFLOW;
+        });
+        box1 = box1 + 1;
+    }
+    return mouse.ENDFLOW;
+};
+new Mouse(async mouse => {
+    await mouse.clear();
+    await mouse.setInstrument("guitar", async () => {
+        await mouse.setColor(50);
+        await action(mouse);
+        return mouse.ENDFLOW;
+    });
+    return mouse.ENDMOUSE;
+});
+MusicBlocks.run();
+```
+
+which when run (by clicking on the `▶` button on the editor), plays
+[audio](./assets/traverse-mode-up-down.oga) and draws
+![artwork](./assets/traverse-mode-up-down-art.png).
+
