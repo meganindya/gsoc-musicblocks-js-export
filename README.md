@@ -12,9 +12,9 @@ Some examples are present in [examples/](./examples).
 
 ## Abstract
 
-The aim of *Music Blocks* is to teach beginners how to program, using a
-snap-together block-based instructions to create music. The purpose of my
-project is **to develop a framework to export any Music Blocks program to an equivalent JavaScript code, and/or write Music Blocks programs using JavaScript, either of which can run independently of the blocks**.
+The aim of [*Music Blocks*](https://musicblocks.sugarlabs.org/) is to teach
+beginners how to program, using a snap-together block-based instructions to
+create music. The purpose of my project is **to develop a framework to export any Music Blocks program to an equivalent JavaScript code, and/or write Music Blocks programs using JavaScript, either of which can run independently of the blocks**.
 </br>
 
 ## Tech Stack
@@ -160,7 +160,7 @@ Below listed are the major contributions related to the said work.
 | [2471](https://github.com/sugarlabs/musicblocks/pull/2471) | Ported code related to behavior of*Ornament* blocks. |
 | [2476](https://github.com/sugarlabs/musicblocks/pull/2474) | Ported code related to behavior of*Volume* blocks. |
 | [2477](https://github.com/sugarlabs/musicblocks/pull/2477) | Ported code related to behavior of *Drum*blocks. |
-| [2508](https://github.com/sugarlabs/musicblocks/pull/2508) | Created the API files. |
+| [2508](https://github.com/sugarlabs/musicblocks/pull/2508) | Created the *API* files. |
 | [2511](https://github.com/sugarlabs/musicblocks/pull/2511) | Set up the timing of events. |
 | [2547](https://github.com/sugarlabs/musicblocks/pull/2547) | Add argument validation. |
 
@@ -195,7 +195,7 @@ Below listed is the Pull Request related to the code generation.
 
 | PR | Description |
 | :-: | ----------- |
-| [2525](https://github.com/sugarlabs/musicblocks/pull/2525) | Added the mechanism to generate the tree-like data-structure, AST from it, and the final code. |
+| [2525](https://github.com/sugarlabs/musicblocks/pull/2525) | Added the mechanism to generate the *tree-like data-structure*, *AST* from it, and the *final code*. |
 
 </br>
 
@@ -227,9 +227,9 @@ The **JavaScript Widget** looks like:
 The `?` button displays the *help* and *guide* about the syntax, the `↻` button
 *regenerates* (for changes made in block stacks) the code, and the `▶` button
 *executes* (runs) the code. The button `💧` button changes the style. The editor
-supports **four styles** (themes): *dark high-contrast* (`dracula`), *light low-contrast*
-(`github`), *dark high-contrast* (`railcasts`), *light high-contrast*
-(`visual studio`).
+supports **four styles** (themes): *dark low-contrast* (`dracula`),
+*light high-contrast* (`visual studio`), *dark high-contrast* (`railcasts`),
+*light low-contrast* (`github`).
 
 ![JavaScript Editor Styles](./assets/js-editor-styles.png)
 
