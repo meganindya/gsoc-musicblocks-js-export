@@ -7,6 +7,7 @@ during *Google Summer of Code 2020* with
 [original authored files](./original-authored-files/), samples of my work, and
 examples. The *exported* code syntax *guide* and *API* is present in
 [original-authored-files/js-export/samples/sample.js](./original-authored-files/js-export/samples/sample.js).
+Some examples are present in [examples/](./examples).
 </br>
 
 ## Abstract
