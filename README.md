@@ -1,7 +1,7 @@
 # Music Blocks JavaScript Export
 
 This is a description of my work on
-[Music Blocks JavaScript Export](https://summerofcode.withgoogle.com/projects/#5876019535282176)
+[Music Blocks JavaScript Export](https://summerofcode.withgoogle.com/archive/2020/projects/5694628457611264/)
 during *Google Summer of Code 2020* with
 [Sugar Labs](https://github.com/sugarlabs/). This repository contains my
 [original authored files](./original-authored-files/), samples of my work, and
